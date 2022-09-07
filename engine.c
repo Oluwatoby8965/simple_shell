@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * lookforslash - identifies if first char is a slash.
- * @cmd: first string
- * Return: 1 if yes 0 if no.
- */
+* lookforslash - identifies if first char is a slash.
+* @cmd: first string
+* Return: 1 if yes 0 if no.
+*/
 int lookforslash(char *cmd)
 {
 	int cont = 0;
@@ -23,11 +23,11 @@ int lookforslash(char *cmd)
 }
 
 /**
- * compareExit - identifies if first char is a slash.
- * @s1: first string
- * @s2: exit string
- * Return: 1 if yes 0 if no.
- */
+* compareExit - identifies if first char is a slash.
+* @s1: first string
+* @s2: exit string
+* Return: 1 if yes 0 if no.
+*/
 int compareExit(char *s1, char *s2)
 {
 	int i = 0;
@@ -44,11 +44,11 @@ int compareExit(char *s1, char *s2)
 }
 
 /**
- * compareEnv - identifies if first char is a slash.
- * @s1: first string
- * @s2: exit string
- * Return: 1 if yes 0 if no.
- */
+* compareEnv - identifies if first char is a slash.
+* @s1: first string
+* @s2: exit string
+* Return: 1 if yes 0 if no.
+*/
 int compareEnv(char *s1, char *s2)
 {
 	int i = 0;
@@ -64,10 +64,10 @@ int compareEnv(char *s1, char *s2)
 	return (*s1 - *s2);
 }
 /**
- * identify_string - identyfy keyboard input.
- * @parameter: call prompt from another function (prompt)
- * Return: str
- **/
+* identify_string - identyfy keyboard input.
+* @parameter: call prompt from another function (prompt)
+* Return: str
+**/
 char **identify_string(char *parameter)
 {
 	char **buf = malloc(1024 * sizeof(char *));
@@ -89,9 +89,9 @@ char **identify_string(char *parameter)
 
 }
 /**
- * controlC - avoid close the shell
- * @sig: keep going shell
- **/
+* controlC - avoid close the shell
+* @sig: keep going shell
+**/
 void  controlC(int sig)
 {
 	(void) sig;
